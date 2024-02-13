@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        body {
+            background-color: #f8d7da; /* Soft pink background color */
+            font-family: 'Times New Roman', Times, serif; /* Romantic serif font */
+            font-size: 18px; /* Adjust font size for better visibility */
+            text-align: center; /* Center align text */
+            padding: 20px; /* Add padding to the body */
+        }
+
+        .container {
+            max-width: 600px; /* Set maximum width for the container */
+            margin: 0 auto; /* Center align the container */
+        }
+
+        .header_text {
+            font-family: 'Lucida Handwriting', cursive; /* Romantic script font */
+            font-size: 28px; /* Adjust font size for better visibility */
+            color: #4d4d4d; /* Dark grey font color */
+            margin-bottom: 20px; /* Add margin below the header text */
+        }
+
+        .gif_container {
+            max-width: 80%; /* Set the maximum width of the GIF container */
+            margin: 20px auto; /* Add margin for better alignment */
+        }
+
+            .gif_container img {
+                max-width: 100%; /* Set the width of the GIF to 100% of its container */
+                height: auto; /* Ensure the GIF maintains its aspect ratio */
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header_text">To my Prince Charming</h1>
+        <div class="gif_container">
+            <!-- Add your GIF here -->
+            <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMWF4OG8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif" alt="Valentine's Day GIF">
+        </div>
+        <h1 class="header_text">Will You Be My Valentine?</h1>
+        <div class="buttons">
+            <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+            <script>
+                function nextPage() {
+                    window.location.href = "yes.html";
+                }
+
+                function moveButton() {
+                    var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                    var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                    document.getElementById('noButton').style.left = `${x}px`;
+                    document.getElementById('noButton').style.top = `${y}px`;
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
